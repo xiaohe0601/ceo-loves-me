@@ -38,6 +38,9 @@ importers:
       vite:
         specifier: ^7.3.1
         version: 7.3.1(@types/node@22.19.3)(tsx@4.21.0)(yaml@2.8.2)
+      vite-plugin-img-preload:
+        specifier: ^1.9.1
+        version: 1.9.1(vite@7.3.1(@types/node@22.19.3)(tsx@4.21.0)(yaml@2.8.2))
 
 packages:
 
@@ -1723,6 +1726,11 @@ packages:
 
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+
+  vite-plugin-img-preload@1.9.1:
+    resolution: {integrity: sha512-GHJ7kvwpPlGIgabA+Rx2DZ54HvvY5GeraBIufzv+gh+ksaAV2ZnZELh4rgCtxU0BL4HfeU0l2Dn32e0yksZOZQ==}
+    peerDependencies:
+      vite: ^4.0.0 || ^5.0.0
 
   vite@7.3.1:
     resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
@@ -3639,6 +3647,10 @@ snapshots:
       punycode: 2.3.1
 
   util-deprecate@1.0.2: {}
+
+  vite-plugin-img-preload@1.9.1(vite@7.3.1(@types/node@22.19.3)(tsx@4.21.0)(yaml@2.8.2)):
+    dependencies:
+      vite: 7.3.1(@types/node@22.19.3)(tsx@4.21.0)(yaml@2.8.2)
 
   vite@7.3.1(@types/node@22.19.3)(tsx@4.21.0)(yaml@2.8.2):
     dependencies:
